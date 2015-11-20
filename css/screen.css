@@ -27,3 +27,47 @@ body { font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; lin
 .l .l-col1 { float: left; width: 20%; }
 
 .l .l-col2 { float: right; width: 70%; }
+
+.wrapper { font-family: 'Roboto'; min-width: 850px; }
+
+.container { width: 790px; position: relative; overflow: hidden; margin: 0 auto; }
+
+.header { position: relative; overflow: hidden; background: #fff; margin: auto; padding: 13px 0 10px 0; }
+
+.logo { float: left; font-size: 12pt; font-family: 'Roboto'; font-weight: 500; }
+
+.logo a { color: #039be5; text-decoration: none; }
+
+.logo a i { color: #6d6e71; font-style: normal; }
+
+.sign_in { float: right; padding: 21px 0 0 0; }
+
+.sign_in a { display: inline-block; color: #039be5; text-decoration: none; font-weight: 500; }
+
+.sign_in a:hover { text-decoration: underline; }
+
+.head_center { overflow: hidden; text-align: center; }
+
+.head_center form { padding: 18px 35px 0 0; display: inline-block; position: relative; width: 90px; height: 20px; }
+
+.head_center form input[type=text] { width: 75px; font-size: 10pt; color: #039be5; font-family: 'Roboto'; }
+
+.head_center form input[type=text]::-webkit-input-placeholder { color: #039be5; font-size: 8pt; }
+
+.head_center form input[type=text]::-moz-placeholder { color: #039be5; font-size: 8pt; }
+
+.head_center form input[type=text]:-ms-input-placeholder { color: #039be5; font-size: 8pt; }
+
+.head_center form input[type=text]::placeholder { color: #039be5; font-size: 8pt; }
+
+.search { display: inline-block; border-bottom: 1px solid #039be5; }
+
+.search:hover { border-color: #fff; }
+
+.search a { font-size: 10pt; color: #039be5; font-family: 'Roboto'; font-weight: bold; text-decoration: none; }
+
+.search img { padding: 0 5px 0 0; }
+
+.main { background: url(../img/main_bg.jpg) no-repeat center top; background-size: cover; }
+
+.person_search { width: 475px; margin: 36px auto; }
