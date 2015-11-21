@@ -39,12 +39,14 @@ body {
 	display: block;
 }
 
-/*-------------------------demo drug-----------------------*/
+/*-------------------------drug-----------------------*/
 
 .drug {
-	width: 50%;
+	width: 54%;
 	padding-right: 3%;
 	float: left;
+	height: 390px;
+	overflow: auto;
 	section {
 		margin-bottom: 10px;
 	}
@@ -105,7 +107,7 @@ body {
 /*-------------------------conversations-----------------------*/
 
 .conversations {
-	width: 40%;
+	width: 41%;
 	float: right;
 	padding-left: 2%;
 	h3 {
@@ -129,6 +131,7 @@ body {
 	overflow: hidden;
 	padding-top: 15px;
 	padding-bottom: 8px;
+	padding-right: 7px;
 }
 .btn_style {
 	font-size: 9px;
@@ -139,16 +142,31 @@ body {
 	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 }
-.dialogs {
-	border: 1px solid #939598;
-}
 .dialogs_item {
 	padding: 10px 16px 9px;
-	border-bottom: 1px solid #939598;
+	border-top: 1px solid #939598;
+	border-right: 1px solid #939598;
+	border-left: 1px solid #939598;
+	&:last-child {
+		border-bottom: none;
+	}
 	p {
 		font-size: 8px;
 		color: #6D6E71;
 		margin-bottom: 8px;
+	}
+}
+.dialogs {
+	position: relative;
+	&:before {
+		content: '';
+		border-top: 1px solid #939598;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 97.5%;
+		height: 1px;
 	}
 }
 .dialogs_item__footer {
@@ -178,12 +196,41 @@ body {
 	text-align: center;
 }
 .more_stories {
-	font-size: 9px;
-	color: #029AE4;
-	text-decoration: none;
-	width: 70px;
-	margin: 0 auto;
 	display: block;
-	padding: 9px 0 9px 18px;
-	background: url(../img/arrow_down.png) no-repeat left center;
+	border: 1px solid #939598;
+	padding: 0 16px;
+	margin-right: 7px;
+	a {
+		font-size: 9px;
+		color: #029AE4;
+		text-decoration: none;
+		width: 70px;
+		margin: 0 auto;
+		display: block;
+		padding: 9px 0 9px 18px;
+		background: url(../img/arrow_down.png) no-repeat left center;
+	}
+}
+
+/*--------------------------scrollbar-------------------------*/
+
+.jspVerticalBar {
+	width: 3px;
+	background: transparent;
+}
+.jspTrack {
+	background: transparent;
+}
+.jspDrag {
+	background: #E6E7E8;
+}
+.jspVerticalBar {
+    top: 2%;
+    right: 12px;
+    width: 3px;
+    height: 98%;
+}
+.dialogs_scrollbar {
+	height: 419px;
+	overflow-y: scroll;
 }

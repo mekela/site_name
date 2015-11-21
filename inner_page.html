@@ -7,6 +7,7 @@
 	<meta name="viewport" content="initial-scale=1"/>
 	<title>title</title>
 	<!-- CSS -->
+	<link rel="stylesheet" href="css/jquery.jscrollpane.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" media="screen" >
 	<link rel="stylesheet" href="css/jquery.bxslider.css" media="screen" >
 	<link href="css/screen.css" rel="stylesheet" media="screen">
@@ -17,12 +18,14 @@
 	<script src="js/jquery.fancybox.pack.js"></script>
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/jquery.jscrollpane.min.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
 	<script src="js/common.js"></script>
-			<!--[if IE]>  
-				<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
-				<![endif]--> 
-				<!-- END OF SCRIPT -->
-			</head>
+	<!--[if IE]>  
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+	<![endif]--> 
+	<!-- END OF SCRIPT -->
+</head>
 			<body>
 				<div class="wrapper">
 					<!--header-->
@@ -87,67 +90,87 @@
 									<button class="btn_style">Explore all</button>
 								</header>
 								<section class="dialogs">
-									<article class="dialogs_item">
-										<p>Lorem ipsum <b>dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <b>dolore</b> magna aliqua.Lorem ipsum dolor...</p>
-										<footer class="dialogs_item__footer">
-										<a href="#" class="dialogs_item__url">soucresite.com</a>
-										<time class="dialogs_item__date" datetime="2015-11-21">Date time stamp</time>
-										<address class="dialogs_item__location">Some location</address>
-										</footer>
-									</article>
-									<article class="dialogs_item">
-										<p>Lorem ipsum <b>dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <b>dolore</b> magna aliqua.Lorem ipsum dolor...</p>
-										<footer class="dialogs_item__footer">
-										<a href="#" class="dialogs_item__url">soucresite.com</a>
-										<time class="dialogs_item__date" datetime="2015-11-21">Date time stamp</time>
-										<address class="dialogs_item__location">Some location</address>
-										</footer>
-									</article>
-									<article class="dialogs_item">
-										<p>Lorem ipsum <b>dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <b>dolore</b> magna aliqua.Lorem ipsum dolor...</p>
-										<footer class="dialogs_item__footer">
-										<a href="#" class="dialogs_item__url">soucresite.com</a>
-										<time class="dialogs_item__date" datetime="2015-11-21">Date time stamp</time>
-										<address class="dialogs_item__location">Some location</address>
-										</footer>
-									</article>
-									<article class="dialogs_item">
-										<p>Lorem ipsum <b>dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <b>dolore</b> magna aliqua.Lorem ipsum dolor...</p>
-										<footer class="dialogs_item__footer">
-										<a href="#" class="dialogs_item__url">soucresite.com</a>
-										<time class="dialogs_item__date" datetime="2015-11-21">Date time stamp</time>
-										<address class="dialogs_item__location">Some location</address>
-										</footer>
-									</article>
-									<article class="dialogs_item">
-										<p>Lorem ipsum <b>dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <b>dolore</b> magna aliqua.Lorem ipsum dolor...</p>
-										<footer class="dialogs_item__footer">
-										<a href="#" class="dialogs_item__url">soucresite.com</a>
-										<time class="dialogs_item__date" datetime="2015-11-21">Date time stamp</time>
-										<address class="dialogs_item__location">Some location</address>
-										</footer>
-									</article>
-									<article class="dialogs_item">
-										<p>Lorem ipsum <b>dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <b>dolore</b> magna aliqua.Lorem ipsum dolor...</p>
-										<footer class="dialogs_item__footer">
-										<a href="#" class="dialogs_item__url">soucresite.com</a>
-										<time class="dialogs_item__date" datetime="2015-11-21">Date time stamp</time>
-										<address class="dialogs_item__location">Some location</address>
-										</footer>
-									</article>
-									<article class="dialogs_item">
-										<p>Lorem ipsum <b>dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <b>dolore</b> magna aliqua.Lorem ipsum dolor...</p>
-										<footer class="dialogs_item__footer">
-										<a href="#" class="dialogs_item__url">soucresite.com</a>
-										<time class="dialogs_item__date" datetime="2015-11-21">Date time stamp</time>
-										<address class="dialogs_item__location">Some location</address>
-										</footer>
-									</article>
-									<a href="#" class="more_stories">more stories</a>
+								<div class="dialogs_scrollbar">
+										<article class="dialogs_item">
+											<p>Lorem ipsum <b>dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <b>dolore</b> magna aliqua.Lorem ipsum dolor...</p>
+											<footer class="dialogs_item__footer">
+												<a href="#" class="dialogs_item__url">soucresite.com</a>
+												<time class="dialogs_item__date" datetime="2015-11-21">Date time stamp</time>
+												<address class="dialogs_item__location">Some location</address>
+											</footer>
+										</article>
+										<article class="dialogs_item">
+											<p>Lorem ipsum <b>dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <b>dolore</b> magna aliqua.Lorem ipsum dolor...</p>
+											<footer class="dialogs_item__footer">
+												<a href="#" class="dialogs_item__url">soucresite.com</a>
+												<time class="dialogs_item__date" datetime="2015-11-21">Date time stamp</time>
+												<address class="dialogs_item__location">Some location</address>
+											</footer>
+										</article>
+										<article class="dialogs_item">
+											<p>Lorem ipsum <b>dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <b>dolore</b> magna aliqua.Lorem ipsum dolor...</p>
+											<footer class="dialogs_item__footer">
+												<a href="#" class="dialogs_item__url">soucresite.com</a>
+												<time class="dialogs_item__date" datetime="2015-11-21">Date time stamp</time>
+												<address class="dialogs_item__location">Some location</address>
+											</footer>
+										</article>
+										<article class="dialogs_item">
+											<p>Lorem ipsum <b>dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <b>dolore</b> magna aliqua.Lorem ipsum dolor...</p>
+											<footer class="dialogs_item__footer">
+												<a href="#" class="dialogs_item__url">soucresite.com</a>
+												<time class="dialogs_item__date" datetime="2015-11-21">Date time stamp</time>
+												<address class="dialogs_item__location">Some location</address>
+											</footer>
+										</article>
+										<article class="dialogs_item">
+											<p>Lorem ipsum <b>dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <b>dolore</b> magna aliqua.Lorem ipsum dolor...</p>
+											<footer class="dialogs_item__footer">
+												<a href="#" class="dialogs_item__url">soucresite.com</a>
+												<time class="dialogs_item__date" datetime="2015-11-21">Date time stamp</time>
+												<address class="dialogs_item__location">Some location</address>
+											</footer>
+										</article>
+										<article class="dialogs_item">
+											<p>Lorem ipsum <b>dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <b>dolore</b> magna aliqua.Lorem ipsum dolor...</p>
+											<footer class="dialogs_item__footer">
+												<a href="#" class="dialogs_item__url">soucresite.com</a>
+												<time class="dialogs_item__date" datetime="2015-11-21">Date time stamp</time>
+												<address class="dialogs_item__location">Some location</address>
+											</footer>
+										</article>
+										<article class="dialogs_item">
+											<p>Lorem ipsum <b>dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <b>dolore</b> magna aliqua.Lorem ipsum dolor...</p>
+											<footer class="dialogs_item__footer">
+												<a href="#" class="dialogs_item__url">soucresite.com</a>
+												<time class="dialogs_item__date" datetime="2015-11-21">Date time stamp</time>
+												<address class="dialogs_item__location">Some location</address>
+											</footer>
+										</article>
+										<article class="dialogs_item">
+											<p>Lorem ipsum <b>dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <b>dolore</b> magna aliqua.Lorem ipsum dolor...</p>
+											<footer class="dialogs_item__footer">
+												<a href="#" class="dialogs_item__url">soucresite.com</a>
+												<time class="dialogs_item__date" datetime="2015-11-21">Date time stamp</time>
+												<address class="dialogs_item__location">Some location</address>
+											</footer>
+										</article>
+								</div>
+									<div class="more_stories">
+										<a href="#">more stories</a>
+									</div>
 								</section>
 							</section>
-						</div>
 					</div>
 				</div>
+			</div>
+				<script type="text/javascript">
+					$(function(){
+						$('.drug').jScrollPane();
+					});
+					$(function(){
+						$('.dialogs_scrollbar').jScrollPane();
+					});
+				</script>
 			</body>
 			</html>
