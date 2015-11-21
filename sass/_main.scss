@@ -1,7 +1,12 @@
 // Normally mainpage styles
 .wrapper{
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
 	min-width: 850px;
+}
+.index_page {
+	background: url(../img/main_bg.jpg) no-repeat center top;
+	background-size: cover;
+	padding-bottom: 60px;
 }
 .container{
 	width: 790px;
@@ -15,12 +20,12 @@
 	overflow: hidden;
 	background: #fff;
 	margin: auto;
-  padding: 13px 0 3px 0;
+  padding: 13px 0 2px 0;
 }
 	.logo{
 		float: left;
-		font-size: 12pt;
-		font-family: 'Roboto';
+		font-size: 12px;
+		font-family: 'Roboto', sans-serif;
 		font-weight: 500;
 		a{
 			color: #039be5;
@@ -28,15 +33,17 @@
 			i{
 				color: #6d6e71;
 				font-style: normal;
+				margin-right: 1px;
 			}
 		}
 		img {
 			vertical-align: bottom;
+			margin-right: 5px;
 		}
 	}
 	.sign_in{
 		float: right;
-		padding: 21px 0 0 0;
+		padding: 21px 4px 0 0;
 		font-size: 10px;
 		a{
 			display: inline-block;
@@ -52,19 +59,20 @@
 		overflow: hidden;
 		text-align: center;
 		form{
-			padding: 18px 35px 0 0;
+			padding: 18px 37px 0 0;
+			margin-left: -15px;
 			display: inline-block;
 			position: relative;
 			width: 90px;
 			height: 20px;
 			input[type=text]{
 				width: 75px;
-				font-size: 10pt;
+				font-size: 10px;
 				color: #039be5;
-				font-family: 'Roboto';
+				font-family: 'Roboto', sans-serif;
 				&::placeholder{
 					color: #039be5;
-					font-size: 8pt;
+					font-size: 10px;
 				}
 			}
 		}
@@ -72,37 +80,39 @@
 		.search{
 			display: inline-block;
 			border-bottom: 1px solid #039be5;
+			padding-bottom: 3px;
 			&:hover{
 				border-color: #fff;
 			}
 			a{
-				font-size: 10pt;
+				font-size: 10px;
 				color: #039be5;
-				font-family: 'Roboto';
+				font-family: 'Roboto', sans-serif;
 				font-weight: bold;
 				text-decoration: none;
 			}
 			img{
-				padding: 0 5px 0 0;
+				padding: 0 2px 0 0;
+				vertical-align: top;
 			}
 		}
 //main
-.main{
-	background: url(../img/main_bg.jpg) no-repeat center top;
-	background-size: cover;
-}
+// .main{
+// 	background: url(../img/main_bg.jpg) no-repeat center top;
+// 	background-size: cover;
+// }
 	.person_search{
-		width: 475px;
-		margin: 36px auto;
-		padding: 14px 25px;
+		width: 425px;
+		margin: 38px auto;
+		padding: 14px 25px 8px;
 		background: rgba(0,0,0, 0.5);
 		box-shadow: 0 0 6px rgba(0,0,0, 0.5);
 		margin-bottom: 17px;
 		small{
 			display: block;
 			padding-top: 6px;
-			text-align: center;
-			font-size: 10pt;
+			text-align: right;
+			font-size: 10px;
 			font-weight: 300;
 			color: #fff;
 			a{
@@ -113,13 +123,13 @@
 	}
 		.person_search h6{
 			font-weight: 300;
-			font-size: 18pt;
+			font-size: 18px;
 			color: #fff;
 			padding-bottom: 14px
 		}
 		.person_search p, .person_search_form{
 			font-weight: 300;
-			font-size: 10pt;
+			font-size: 10px;
 			color: #fff;
 		}
 		.person_search_form{
@@ -128,29 +138,45 @@
 			border-bottom: 1px solid #fff;
 			label{
 				display: block;
-				padding-bottom: 6px;
+				padding-bottom: 3px;
+				font-size: 10px;
 			}
 			input{
-				width: 345px;
+				width: 343px;
 				height: 28px;
 				text-indent: 8px;
 				border: 1px solid #999999;
-				font-size: 10pt;
+				font-size: 10px;
 				color: #939598;
-				font-family: 'Roboto';
+				font-family: 'Roboto', sans-serif;
+				font-size: 10px;
 			}
 			a{
-				font-size: 8pt;
+				font-size: 8px;
 				color: #039BE5;
 				text-decoration: none;
+				float: right;
+    		margin-top: 4px;
 				&:hover{
 					text-decoration: underline;
 				}
 			}
 		}
+		.person_search {
+			position: relative;
+			&:before {
+				content: '';
+				background: url(../img/ribbon_big.png) no-repeat;
+				width: 24px;
+				height: 32px;
+				position: absolute;
+				right: 75px;
+				top: 14px;
+			}
+		}
 			.person_search_row{
 				overflow: hidden;
-				padding-bottom:10px;
+				padding-bottom:8px;
 			}
 				.person_search_col_xxl{
 					width: 70%;
@@ -158,25 +184,27 @@
 				}
 				.person_search_col_xs{
 					float: right;
-					width: 23%;
-					margin: 0 3px 0 0;
+					width: 16.4%;
+					margin: 0;
 					button{
-						margin-top: 24px;
+						margin-top: 14px;
 						background: #039BE5;
 						width: 100%;
 						height: 30px;
 						border: none;
 						cursor: pointer;
-						font-size: 10pt;
+						font-size: 10px;
 						color: #fff;
 						box-shadow: 0 1px 2px rgba(0,0,0, 0.7);
 						img{
 							position: relative;
-							left: -8px;
+							left: 1px;
+							margin-right: 5px;
 						}
 						span{
 							position: relative;
-							top: -2px;
+							top: -5px;
+							font-size: 10px;
 						}
 					}
 				}
@@ -188,27 +216,30 @@
 							width: 100%;
 							height: 28px;
 							background: #fff;
-							font-size: 10pt;
+							font-size: 10px;
 							color: #939598;
-							font-family: 'Roboto';
+							font-family: 'Roboto', sans-serif;
 						}
 					}
 				.person_search_col{
-					width: 23%;
+					width: 23.8%;
 					float: left;
 					margin: 0 2% 0 0;
+				}
+				.person_search_col--belong {
+					width: 30%;
 				}
 	.how_analitic_wrap{
 		width: 675px;
 		height: 216px;
 		margin: 0 auto;
 		box-shadow: 0 0 6px rgba(0,0,0, 0.5);
-		margin-bottom: 37px;
+		margin-bottom: 29px;
 		h3{
-			font-size: 12pt;
+			font-size: 12px;
 			color: #fff;
 			font-weight: 500;
-			padding:7px 0 13px 0;
+			padding:7px 0 14px 0;
 		}
 	}
 		.how_analitic_block{
@@ -222,14 +253,23 @@
 			float: left;
 			background: rgba(255,255,255, 0.5);
 			position: relative;
+			&:before {
+				content: '';
+				background: url(../img/person-ico.png) no-repeat;
+				width: 23px;
+				height: 30px;
+				position: absolute;
+				top: 13px;
+				left: 12px;
+			}
 			span {
 				width: 185px;
-				font-size: 11pt;
+				font-size: 11px;
 				color: #414042;
 				position: absolute;
 				font-weight: 500;
 				left: -69px;
-  				bottom: 79px;
+  			bottom: 98px;
 				-moz-transform: rotate(270deg);
 				-webkit-transform: rotate(270deg);
 				-o-transform: rotate(270deg);
@@ -241,21 +281,24 @@
 				float: left;
 				border-right: 2px solid #fff;
 				height: 196px;
-				width: 240px;
+				width: 236px;
 				margin-left: 20px;
-				margin-top: 10px;
+				margin-top: 12px;
 				height: 216px;
 			}
+				.analitic_block img {
+					margin-top: 6px;
+				}
 				.analitic_block figure{
 					width: 62px;
 					height: 62px;
 					border: 2px solid #fff;
 					text-align: center;
-					border-radius: 7px;
+					border-radius: 5px;
 					float: left;
-					margin: 0 9px 9px 0 ;
+					margin: 0 9px 12px 0;
 					font-weight: 300;
-					font-size: 6pt;
+					font-size: 6px;
 					color: #fff;
 					span{
 						display: table-cell;
@@ -265,67 +308,88 @@
 					}
 				}
 			.how_block{
-				margin: 10px 0 0 0px;
+				margin: 12px 0 0 0px;
 				overflow: hidden;
-				padding-left: 15px;
+				padding-left: 16px;
 				height: 216px;
 			}
 				.how_inner{
 					overflow: hidden;
+					margin-left: 9px;
+    			margin-top: 5px;
 				}
 					.how{
-						margin: 0 18px 0 0;
+						padding: 0 27px 0 0;
 						position: relative;
 						vertical-align: top;
-						width: 100px;
+						width: 85px;
 						display: inline-block;
+						&:after {
+							content: '';
+							background: url(../img/arrow-next.png);
+							width: 13px;
+							height: 21px;
+							position: absolute;
+							top: 15px;
+							right: 17%;
+						}
 						figcaption{
-							padding: 5px 0;
+							padding: 7px 0 9px;
+							margin-left: 3px;
 							font-weight: 300;
-							font-size: 11pt;
+							font-size: 11px;
 							color: #fff;
 						}
 						p{
 							font-weight: 300;
-							font-size: 9pt;
+							font-size: 9px;
 							color: #fff;
-							line-height: 1.1
+							line-height: 1.3;
+							margin-left: 2px;
 						}
 					}
 						.how:last-child{
 							margin: 0;
 						}
+						.how:last-child:after {
+							content: none;
+						}
+						.how:nth-child(2):after {
+							right: 10%;
+						}
 //footer
 .footer{
 	background: #939598;
-	padding: 10px 0;
+	padding: 8px 0;
 	overflow: hidden;
 }
 	.foot_text{
 		float: left;
-		font-size: 9pt;
+		font-size: 9px;
 		color: #fff;
-		width: 612px
+		width: 612px;
+		margin-right: 25px;
+		line-height: 1.3;
 	}
 	.social_foot{
 		float: left;
 		width: 100px;
-		height: 49px;
+		height: 35px;
 		border-left: 2px solid #fff;
 		border-right: 2px solid #fff;
 		text-align: center;
 		a{
 			display: inline-block;
-			padding: 14px 3px 0 3px;
+			padding: 7px 2px 0 2px;
 		}
 	}
 	.fr{
 		float: right;
 		font-weight: 300;
-		font-size: 10pt;
+		font-size: 10px;
 		color: #fff;
 		text-decoration: none;
-		padding-top: 14px;
+		padding-top: 12px;
 		&:hover{
 			text-decoration: underline;
 		}
