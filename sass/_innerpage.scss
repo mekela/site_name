@@ -1,0 +1,38 @@
+body {
+  font-family: 'Roboto';
+}
+
+::-webkit-input-placeholder {color:#6D6E71;}
+::-moz-placeholder          {color:#6D6E71;}
+:-moz-placeholder           {color:#6D6E71;}
+:-ms-input-placeholder      {color:#6D6E71;}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+.search_field {
+	background: #EBEBEC;
+	border-top: 2px groove #858689; 
+	padding: 9px 0;
+	-webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.25);
+	input {
+		font-size: 9px;
+		padding: 5px 8px;
+		border: 1px solid #939598;
+		background: #fff url(../img/search.png) 98% center no-repeat;
+		width: 47%;
+	}
+}
+	.search_field .container {
+		background: url(../img/ribbon_pink.png) left 8px no-repeat;
+		padding-left: 30px;
+	}
+.search_field__title {
+	color: #6D6E71;
+	font-size: 8px;
+	font-weight: 300;
+	display: block;
+}
