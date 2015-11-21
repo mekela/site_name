@@ -114,7 +114,7 @@ body { font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; lin
 .fr { float: right; font-weight: 300; font-size: 10pt; color: #fff; text-decoration: none; padding-top: 14px; }
 .fr:hover { text-decoration: underline; }
 
-body { font-family: 'Roboto'; }
+body { font-family: 'Roboto'; line-height: 1.2; }
 
 ::-webkit-input-placeholder { color: #6D6E71; }
 
@@ -140,7 +140,7 @@ body { font-family: 'Roboto'; }
 .search_field__title { color: #6D6E71; font-size: 8px; font-weight: 300; display: block; }
 
 /*-------------------------demo drug-----------------------*/
-.drug { width: 55%; }
+.drug { width: 50%; padding-right: 3%; float: left; }
 .drug section { margin-bottom: 10px; }
 .drug h1, .drug h2 { font-size: 11px; font-weight: 700; color: #939598; margin-bottom: 5px; }
 .drug p { font-size: 9px; color: #6D6E71; line-height: 1.2; }
@@ -156,3 +156,30 @@ body { font-family: 'Roboto'; }
 .side_effects_drug h3 { font-size: 12px; font-weight: 700; color: #939598; margin-bottom: 5px; }
 .side_effects_drug p { margin-bottom: 25px; }
 .side_effects_drug img { display: block; max-width: 100%; margin: 0 auto; }
+
+/*-------------------------conversations-----------------------*/
+.conversations { width: 40%; float: right; padding-left: 2%; }
+.conversations h3 { font-size: 11px; font-weight: 700; color: #939598; margin-bottom: 5px; float: left; }
+.conversations h3 b { font-size: 12px; color: #029AE4; }
+.conversations .btn_style { float: right; }
+
+.conversations__header { padding-left: 33px; background: url(../img/user-ico.png) no-repeat 5px top; overflow: hidden; padding-top: 15px; padding-bottom: 8px; }
+
+.btn_style { font-size: 9px; color: #fff; background: #029AE4; padding: 4px 6px; box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5); }
+
+.dialogs { border: 1px solid #939598; }
+
+.dialogs_item { padding: 10px 16px 9px; border-bottom: 1px solid #939598; }
+.dialogs_item p { font-size: 8px; color: #6D6E71; margin-bottom: 8px; }
+
+.dialogs_item__footer { text-align: center; }
+
+.dialogs_item__url, .dialogs_item__date, .dialogs_item__location { font-size: 8px; color: #939598; }
+
+.dialogs_item__url { text-decoration: none; float: left; margin-top: 3px; }
+
+.dialogs_item__date { float: right; background: url(../img/date-ico.png) no-repeat left 1px; padding: 3px 0 3px 15px; margin-top: 1px; }
+
+.dialogs_item__location { background: url(../img/map-ico.png) no-repeat left center; overflow: hidden; padding: 5px 0 2px 10px; margin: 0 auto; display: inline; text-align: center; }
+
+.more_stories { font-size: 9px; color: #029AE4; text-decoration: none; width: 70px; margin: 0 auto; display: block; padding: 9px 0 9px 18px; background: url(../img/arrow_down.png) no-repeat left center; }
