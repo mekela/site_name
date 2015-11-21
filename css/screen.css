@@ -28,13 +28,14 @@ body { font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; lin
 
 .container { width: 790px; position: relative; overflow: hidden; margin: 0 auto; }
 
-.header { position: relative; overflow: hidden; background: #fff; margin: auto; padding: 13px 0 10px 0; }
+.header { position: relative; overflow: hidden; background: #fff; margin: auto; padding: 13px 0 3px 0; }
 
 .logo { float: left; font-size: 12pt; font-family: 'Roboto'; font-weight: 500; }
 .logo a { color: #039be5; text-decoration: none; }
 .logo a i { color: #6d6e71; font-style: normal; }
+.logo img { vertical-align: bottom; }
 
-.sign_in { float: right; padding: 21px 0 0 0; }
+.sign_in { float: right; padding: 21px 0 0 0; font-size: 10px; }
 .sign_in a { display: inline-block; color: #039be5; text-decoration: none; font-weight: 500; }
 .sign_in a:hover { text-decoration: underline; }
 
@@ -132,44 +133,44 @@ body { font-family: 'Roboto'; line-height: 1.2; }
 
 :focus:-ms-input-placeholder { color: transparent; }
 
-.search_field { background: #EBEBEC; border-top: 2px groove #858689; padding: 9px 0; box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25); margin-bottom: 15px; }
+.search_field { background: #EBEBEC; border-top: 2px groove #858689; padding: 6px 0; box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25); margin-bottom: 12px; }
 .search_field input { font-size: 9px; padding: 5px 8px; border: 1px solid #939598; background: #fff url(../img/search.png) 98% center no-repeat; width: 47%; }
 
-.search_field .container { background: url(../img/ribbon_pink.png) left 8px no-repeat; padding-left: 30px; }
+.search_field form { background: url(../img/ribbon_pink.png) left 8px no-repeat; padding-left: 30px; margin-left: 5px; }
 
 .search_field__title { color: #6D6E71; font-size: 8px; font-weight: 300; display: block; }
 
 /*-------------------------drug-----------------------*/
-.drug { width: 54%; padding-right: 3%; float: left; height: 390px; overflow: auto; }
-.drug section { margin-bottom: 10px; }
+.drug { width: 54%; padding-right: 3%; float: left; height: 420px; overflow: auto; line-height: 1.3; margin-top: 5px; }
+.drug section { margin-bottom: 12px; }
 .drug h1, .drug h2 { font-size: 11px; font-weight: 700; color: #939598; margin-bottom: 5px; }
 .drug p { font-size: 9px; color: #6D6E71; line-height: 1.2; }
-.drug ol { list-style: decimal; font-size: 9px; color: #6D6E71; line-height: 1.2; padding-left: 12px; }
+.drug ol { list-style: decimal; font-size: 9px; color: #6D6E71; line-height: 1.3; padding-left: 12px; }
 
-.demo_drug { padding-left: 30px; background: url(../img/drug_ico.png) no-repeat left top; }
+.demo_drug { padding-left: 30px; background: url(../img/drug_ico.png) no-repeat left top; margin-bottom: 15px; }
 
 .drug_other_names ol { color: #029AE4; }
 .drug_other_names ol span { color: #6D6E71; }
 .drug_other_names ol b { font-weight: 400; }
 
-.side_effects_drug { padding-left: 30px; background: url(../img/dislike-ico.png) no-repeat left 4px; }
-.side_effects_drug h3 { font-size: 12px; font-weight: 700; color: #939598; margin-bottom: 5px; }
+.side_effects_drug { padding-left: 30px; background: url(../img/dislike-ico.png) no-repeat left 11px; }
+.side_effects_drug h3 { font-size: 12px; font-weight: 700; color: #939598; margin-bottom: 5px; padding-top: 10px; border-top: 1px solid #6D6E71; }
 .side_effects_drug p { margin-bottom: 25px; }
 .side_effects_drug img { display: block; max-width: 100%; margin: 0 auto; }
 
 /*-------------------------conversations-----------------------*/
-.conversations { width: 41%; float: right; padding-left: 2%; }
+.conversations { width: 41%; float: right; margin-right: 5px; padding-left: 1%; }
 .conversations h3 { font-size: 11px; font-weight: 700; color: #939598; margin-bottom: 5px; float: left; }
 .conversations h3 b { font-size: 12px; color: #029AE4; }
 .conversations .btn_style { float: right; }
 
-.conversations__header { padding-left: 33px; background: url(../img/user-ico.png) no-repeat 5px top; overflow: hidden; padding-top: 15px; padding-bottom: 8px; padding-right: 7px; }
+.conversations__header { padding-left: 33px; background: url(../img/user-ico.png) no-repeat 5px top; overflow: hidden; padding-top: 11px; padding-bottom: 5px; padding-right: 7px; }
 
 .btn_style { font-size: 9px; color: #fff; background: #029AE4; padding: 4px 6px; box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5); }
 
-.dialogs_item { padding: 10px 16px 9px; border-top: 1px solid #939598; border-right: 1px solid #939598; border-left: 1px solid #939598; }
+.dialogs_item { padding: 8px 16px 7px; border-top: 1px solid #939598; border-right: 1px solid #939598; border-left: 1px solid #939598; }
 .dialogs_item:last-child { border-bottom: none; }
-.dialogs_item p { font-size: 8px; color: #6D6E71; margin-bottom: 8px; }
+.dialogs_item p { font-size: 8px; color: #6D6E71; margin-bottom: 10px; }
 
 .dialogs { position: relative; }
 .dialogs:before { content: ''; border-top: 1px solid #939598; position: absolute; top: 0; left: 0; right: 0; width: 97.5%; height: 1px; }
@@ -196,4 +197,4 @@ body { font-family: 'Roboto'; line-height: 1.2; }
 
 .jspVerticalBar { top: 2%; right: 12px; width: 3px; height: 98%; }
 
-.dialogs_scrollbar { height: 419px; overflow-y: scroll; }
+.dialogs_scrollbar { height: 403px; overflow-y: scroll; }

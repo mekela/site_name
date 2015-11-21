@@ -15,7 +15,7 @@
 	overflow: hidden;
 	background: #fff;
 	margin: auto;
-	padding: 13px 0 10px 0;
+  padding: 13px 0 3px 0;
 }
 	.logo{
 		float: left;
@@ -29,11 +29,15 @@
 				color: #6d6e71;
 				font-style: normal;
 			}
-		}	
+		}
+		img {
+			vertical-align: bottom;
+		}
 	}
 	.sign_in{
 		float: right;
 		padding: 21px 0 0 0;
+		font-size: 10px;
 		a{
 			display: inline-block;
 			color: #039be5;
